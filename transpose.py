@@ -1,18 +1,14 @@
-m1=[]
-
+mat1=[]
 for i in range(3):
-    m1.append([])
+    mat1.append([])
     for j in range(3):
-        a=int(input("enter the no."))
-        m1[i].append(a)
-mt=[]
+        x=int(input("Enter a number:"))
+        mat1[i].append(x)
+print(mat1)
 
+transposed=[]
 for i in range(3):
-    mt.append([])
+    transposed.append([])
     for j in range(3):
-        t=m1[j][i]
-        mt[i].append(t)
-
-
-print("matrix is",m1)
-print("transpose matrix is",mt)
+        transposed[i].append(mat1[j][i])
+print(transposed)        
